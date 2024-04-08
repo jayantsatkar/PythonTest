@@ -1,0 +1,82 @@
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Number=1,Role=Admin
+INFO:errorLogger:Number=2,Role=Packer
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name==__main__
+INFO:errorLogger:Name=__main__;Application Started
+INFO 24-03-25 12:50:49 -- Name=__main__;Application Started
+INFO 24-03-25 12:51:37 -- Application Started
+INFO 24-03-25 12:53:27 -- Application Started
+INFO 24-03-25 12:53:49 -- Application Started
+INFO 24-03-25 12:55:16 -- Application Started
+INFO 24-03-25 13:01:08 -- Application Started
+INFO 24-03-25 13:02:52 -- Application Started
+INFO 24-03-25 13:03:24 -- Application Started
+INFO 24-03-25 13:04:19 -- Application Started
+INFO 24-03-25 13:04:48 -- Application Started
+INFO 24-03-25 13:05:06 -- Application Started
+INFO 24-03-25 13:08:03 -- Application Started
+INFO 24-03-25 13:08:46 -- Application Started
+INFO 24-03-25 13:09:54 -- Application Started
+INFO 24-03-25 13:11:58 -- Application Started
+INFO 24-03-25 13:12:18 -- Application Started
+INFO 24-03-25 13:23:18 -- Application Started
+INFO 24-03-25 13:23:55 -- Application Started
+INFO 24-03-25 13:24:11 -- Application Started
+INFO 24-03-25 13:24:30 -- Application Started
+INFO 24-03-25 13:24:45 -- Application Started
+INFO 24-03-25 13:25:08 -- Application Started
+INFO 24-03-25 13:25:15 -- Application Started
+INFO 24-03-25 13:25:23 -- Application Started
+INFO 24-03-25 13:25:33 -- Application Started
+INFO 24-03-25 13:25:55 -- Application Started
+INFO 24-03-25 13:27:56 -- Application Started
+INFO 24-03-25 13:28:19 -- Application Started
+INFO 24-03-25 13:30:54 -- Application Started
+INFO 24-03-25 13:32:00 -- Application Started
+INFO 24-03-25 13:32:14 -- Application Started
+INFO 24-03-25 13:32:45 -- Application Started
+INFO 24-03-25 14:20:17 -- Application Started
+INFO 24-03-25 14:28:29 -- Application Started
+INFO 24-03-25 14:30:36 -- Application Started
+INFO 24-03-25 14:30:48 -- Application Started
+INFO 24-03-25 14:33:09 -- Application Started
+INFO 24-03-25 14:33:09 -- Application Started
+Traceback (most recent call last):
+  File "src\\pymssql\\_pymssql.pyx", line 647, in pymssql._pymssql.connect
+  File "src\\pymssql\\_mssql.pyx", line 2135, in pymssql._mssql.connect
+  File "src\\pymssql\\_mssql.pyx", line 719, in pymssql._mssql.MSSQLConnection.__init__
+  File "src\\pymssql\\_mssql.pyx", line 1844, in pymssql._mssql.maybe_raise_MSSQLDatabaseException
+  File "src\\pymssql\\_mssql.pyx", line 1861, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (localhost)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (localhost)\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Jayant\PythonBoroScopeIntegration\BoroscopeIntegrationPython\dbhelper.py", line 30, in ExecuteQuery
+    conn = pymssql.connect(server=paramList[0], user=paramList[1], password=paramList[2], database=paramList[3],as_dict=paramList[4])
+  File "src\\pymssql\\_pymssql.pyx", line 653, in pymssql._pymssql.connect
+pymssql._pymssql.OperationalError: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (localhost)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (localhost)\n")
+INFO 24-03-25 14:35:34 -- Application Started
+INFO 24-03-25 14:43:24 -- Application Started
+INFO 24-03-25 14:49:46 -- Application Started

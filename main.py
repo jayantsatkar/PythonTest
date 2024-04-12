@@ -2,7 +2,7 @@ from dbhelper import *
 from errorLogger import *
 from tkinter import * 
 import sys
-
+#https://www.pythonguis.com/tutorials/pyside6-layouts/
 try:
     from PySide6.QtWidgets import QApplication
 except ImportError:

@@ -8,6 +8,7 @@ class MainWindow(QWidget):
 
         self.setWindowTitle('PyQt Widget Demo')
 
+
         # create an input pane
         layout = QHBoxLayout()
         self.setLayout(layout)
